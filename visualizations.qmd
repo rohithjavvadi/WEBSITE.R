@@ -1,0 +1,11 @@
+---
+title: "Visualization"
+---
+
+![\# Redesign 1.1 using Treemao plotly](images/newplot.png){fig-align="center"}
+
+![\# redesign 1.2Created stacked bar chart using cumulaitive percentage](images/Screenshot (213).png){fig-align="center"}
+
+![Redesign 2.1](images/newplot2.png)
+
+![\# Redesign 2.2](images/Screenshot (214).png)

@@ -1,0 +1,178 @@
+---
+title: "CODE"
+editor: visual
+---
+# Importing the libraries and packages
+library(lattice)
+library(tidyverse)
+library(plotly)
+library(ggplot2)
+library(tidyr)
+library(magrittr)
+library(dplyr)
+library(tibble)
+
+# creating the data using the source
+No_of_candidates <- c(323,138,356,586,965)
+percentage_of_candidates <- c(13.6, 5.8,  15.0,  24.7,40.8)
+
+# binding the columns and rows
+bind <- cbind( No_of_candidates, percentage_of_candidates)
+bind
+Value_of_assets <- c("Rs. 5 crores and above", "Rs. 2 crores to Rs. 5 crores",  "Rs. 50 lakhs to Rs. 2 crores", "Rs. 10 lakhs to Rs.50 lakhs", "less than Rs.10 lakhs")
+rownames(bind) <- Value_of_assets
+Bind<-print(bind)
+
+# writing as new csv file
+write.csv(Bind,"bind.csv")#row.names=FALSE)
+
+queen<-read.csv("bind.csv")
+
+# creating the data using the source
+Total_Contesting_Candidates <- c(342,389,672,984,2387)
+
+Total_Number_of_Analysed_Candidates <- c(340,388,667,973,2368)
+
+Candidates_with_declared_CriminalCases<- c(59,217,109,157,543)
+
+
+Percentage_of_candidates_with_declared_criminalcases<- c(17,56,16,16,23)
+
+
+Candidates_with_declared_serious_criminalcases<- c(31,140,82,121,374)
+
+Percentage_of_candidates_with_declared_serious_criminalcases<- c(9,36,12,12,16)
+
+No_of_Crorepatis<- c(101,307,74,122,604)
+
+Percentage_of_Crorepati_Candidates<- c(30,79,11,13,26)
+
+# binding the columns and rows
+bind1 <- cbind( Total_Contesting_Candidates,Total_Number_of_Analysed_Candidates,Candidates_with_declared_CriminalCases,Percentage_of_candidates_with_declared_criminalcases,
+                Candidates_with_declared_serious_criminalcases,Percentage_of_candidates_with_declared_serious_criminalcases,No_of_Crorepatis,Percentage_of_Crorepati_Candidates)
+bind1
+
+Party <- c("National Parties", "State Parties", "Registered Unrecognized Party", "Independent", "Total")
+rownames(bind1)<- Party
+bind1
+
+# writing the csv file
+write.csv(bind1,"bold.csv")
+king<-read.csv("bold.csv")
+
+# redesign 1 plotly Tree Map
+total <- sum(No_of_candidates)
+
+plot_ly(
+  data = queen,
+  type = "treemap",
+  labels = ~Value_of_assets,
+  parents = "",
+  values = ~No_of_candidates,
+  text = ~paste0( "<br>", No_of_candidates, " candidates<br>", percentage_of_candidates, "%"),
+  textinfo = "label+text",
+  hoverinfo = "text",
+  marker = list(
+    colors = c("#1f77b4", "#ff7f0e", "#2ca02c", "#d62728", "#9467bd"),
+    line = list(width = 2)
+  )
+) %>%
+  layout(
+    title = "Share of Wealth Among Contesting Candidates",
+    font = list(size = 12),
+    treemapcolorway = c("#1f77b4", "#ff7f0e", "#2ca02c", "#d62728", "#9467bd")
+  )
+
+
+# redesign 2 Stacked Bar Chart
+
+# Sort the data by percentage in descending order
+wealth_data <- queen %>% arrange(desc(percentage_of_candidates))
+
+# Calculate cumulative percentages for positioning
+wealth_data$cumulative <- cumsum(bind$percentage_of_candidates)
+wealth_data$midpoint <- wealth_data$cumulative - (bind$Percentage_ / 2)
+
+# Create the stacked bar chart
+ggplot(wealth_data, aes(x = "", y = percentage_of_candidates, fill = reorder(Value_of_assets, -percentage_of_candidates))) +
+  geom_bar(stat = "identity", width = 0.5) +
+  geom_text(aes(label = paste0(percentage_of_candidates, "%\n(", No_of_candidates, ")")), 
+            position = position_stack(vjust = 0.5),
+            size = 3.5, color = "black", fontface = "bold") +
+  coord_flip() +
+  scale_fill_brewer(palette = "RdYlBu") +
+  labs(title = "Share of Wealth Among Contesting Candidates",
+       subtitle = "Percentage and Number of Candidates in Each Wealth Category",
+       x = NULL, y = "Percentage of Candidates", fill = "Wealth Category") +
+  theme_minimal() +
+  theme(legend.position = "right",
+        axis.text.y = element_blank(),
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        plot.title = element_text(hjust = 0.5, face = "bold"),
+        plot.subtitle = element_text(hjust = 0.5)) +
+  guides(fill = guide_legend(reverse = TRUE))
+
+## 2
+
+# redesign 1  Plotly barchart
+w_df <- as.data.frame(king)
+plot <- plotly::plot_ly(w_df, y = ~Party, type = "bar", orientation = 'h') %>%
+  plotly::add_trace(x = ~Percentage_of_candidates_with_declared_criminalcases, 
+            name = "Criminal Cases",
+            marker = list(color = "darkred"),
+            text = ~paste(round(Percentage_of_candidates_with_declared_criminalcases, 1), "%"),
+            textposition = "outside") %>%
+  plotly::add_trace(x = ~Percentage_of_Crorepati_Candidates, 
+            name = "Crorepati Candidates",
+            marker = list(color = "darkblue"),
+            text = ~paste(round(Percentage_of_Crorepati_Candidates), 1), "%",
+            textposition = "outside") %>%
+  plotly::layout(
+    title = "Party Category Percentages",
+    barmode = "group",
+    xaxis = list(title = "Percentage", ticksuffix = "%", range = c(0, 100)),
+    yaxis = list(title = ""),
+    legend = list(x = 0.5, y = -0.2, orientation = "h", xanchor = "center"),
+    margin = list(l = 150)  # Increase left margin to accommodate long category names
+  )
+plot
+
+# redesign-2 vertical stcked bar chart 
+
+# Create the data frame
+data <- data.frame(
+  Party_Category = c("National Parties", "State Parties", "Registered Unrecognized", "Independent"),
+  Criminal_Cases = c(9,36,12,12),
+  Crorepati_Candidates = c(30,79,11,13)
+)
+
+# Reshape the data to long format
+data_long <- data %>%
+  pivot_longer(cols = c(Criminal_Cases, Crorepati_Candidates),
+               names_to = "Type",
+               values_to = "Percentage")
+
+# Calculate percentages
+data_long <- data_long %>%
+  group_by(Party_Category) %>%
+  mutate(Percentage = Percentage / sum(Percentage) * 100)
+
+
+# Create the stacked bar chart
+ggplot(data_long, aes(x = Party_Category, y = Percentage, fill = Type)) +
+  geom_bar(stat = "identity", width = 0.7) +
+  coord_flip() +
+  scale_fill_manual(values = c("Criminal_Cases" = "grey", "Crorepati_Candidates" = "black")) +
+  scale_y_continuous(labels = scales::percent_format(scale = 1), 
+                     breaks = seq(0, 100, 20),
+                     limits = c(0, 100)) +
+  labs(x = "", y = "Percentage", fill = "") +
+  theme_minimal() +
+  theme(legend.position = "bottom",
+        axis.text.y = element_text(hjust = 1),
+        panel.grid.major.y = element_blank()) +
+  geom_text(aes(label = sprintf("%.0f%%", Percentage)), 
+            position = position_stack(vjust = 0.5),
+            color = "white", size = 3)
+

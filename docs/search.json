@@ -1,0 +1,86 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "ROHITH JAVVADI",
+    "section": "",
+    "text": ":::\nResults‑driven Master’s student with strong problem‑solving skills and a passion for data analytics and data science"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "I’m a Master’s student passionate about blending technology, analytics, and hands-on problem-solving to create seamless experiences. With strong experience in customer service, event management, and technical troubleshooting, I thrive in dynamic environments where attention to detail and adaptability are key. I’m proficient in operating and managing audiovisual systems, and I’m continually expanding my technical skill set, currently delving into data analytics and big data technologies.\nWhether working behind the scenes at events or diving into data to extract insights, I’m dedicated to delivering high-quality results that leave a lasting impact. My journey in mastering new technologies is ongoing, with a current focus on R Studio and big data platforms. As I continue to learn and grow, I look forward to bringing my unique blend of skills to new challenges and opportunities."
+  },
+  {
+    "objectID": "hobbies.html",
+    "href": "hobbies.html",
+    "title": "hobbies",
+    "section": "",
+    "text": "cricket, Mobile, Gaming, Analysing the puzzles"
+  },
+  {
+    "objectID": "index.html#education",
+    "href": "index.html#education",
+    "title": "ROHITH JAVVADI",
+    "section": "Education",
+    "text": "Education\nGeorge Mason University, Fairfax | Fairfax, USA Masters in Data Analytics Engineering | Aug 2024 - Present\nSRM IST , KTR | Chennai, INDIA B.Tech in cse with specialisation in Blockchain Technology | Sept 2020 - May 2024"
+  },
+  {
+    "objectID": "index.html#experience",
+    "href": "index.html#experience",
+    "title": "ROHITH JAVVADI",
+    "section": "Experience",
+    "text": "Experience\nAICTE | CLoud data intern | May 2023 - July2023"
+  },
+  {
+    "objectID": "skills.html",
+    "href": "skills.html",
+    "title": "Skills",
+    "section": "",
+    "text": "R programming SQL Python Python Frameworks Tableu Java"
+  },
+  {
+    "objectID": "index.html#skills",
+    "href": "index.html#skills",
+    "title": "ROHITH JAVVADI",
+    "section": "Skills",
+    "text": "Skills\nR programming, SQL, Python, Python frameworks\n:::\n```"
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "HRanalytics GMU • Analyzing the HRdata with Random showcase insights with the dashboards with the help of powerbi. • Technical Skills: Python(Numpy), R, Power BI\nCovid19analysis GMU • Analyzed covid‑19 dataset, cleaned it and processed it through R Programming languages. • Technical Skills: Python with Numpy, R Programming.\nVehicle Health Monitoring using IOT SRMIST Chennai, India • It is a real‑time vehicle health monitoring system designed and developed to detect and identify the actuator and sensor faults created automatically or manually by the user of the vehicle . • Technical Skills: Java, Embedded c, Cloud Network.\nCrowd Funding SRMIST Chennai, India Jan 2023‑ Jun2023 • Crowd funding is a collective effort of a large number of individuals who network and pool small amounts of capital finance work existing idea. • Technical Skills: Block Chain Technology, Distributive Ledger, Solidity"
+  },
+  {
+    "objectID": "Mid project.html",
+    "href": "Mid project.html",
+    "title": "Mid-Project",
+    "section": "",
+    "text": "The Midterm Redesign Project for the course STAT 515: Applied Statistics and Visualization for Analytics is designed to enhance students’ skills in data visualization through a systematic redesign process. The project aims to apply class design guidelines using software taught in the course while presenting the results of these redesigns. Students are required to select an original visualization from any source, analyze its strengths and weaknesses, and create multiple redesigns that improve clarity and effectiveness. The project culminates in a professional website submission, which must include a URL to the project site, a GitHub repository with the project code, and a ten-minute video presentation embedded on the website. The analysis should cover the context and intent of the original visualization, highlight its flaws, and suggest improvements based on graphic design principles. This project not only fosters critical thinking and creativity but also contributes to building a professional portfolio, as students are encouraged to apply best practices in graphic design while adhering to academic writing standards.\nIntroduction: I selected two graphs from the original PDF to redesign for better understanding and visualization: “Share of Wealth Among the Contesting Candidates” “Party Wise Percentage of Candidates With Declared Criminal Cases” I chose these two graphs because they contain important information about the candidates’ financial backgrounds and criminal records, which are crucial factors for voters to consider. The original presentations of this data were not as visually appealing or easy to understand as they could be. For the “Share of Wealth Among the Contesting Candidates” data, I proposed a stacked bar chart and tree map. Here’s why this redesign is more effective: Comprehensive view: It shows both the percentage and the actual number of candidates in each wealth category simultaneously. Clear proportions: The stacked bar format allows for easy comparison of proportions between categories. Color-coded categories: Each wealth category is represented by a distinct color, making it easy to differentiate between them. Sorted data: Categories are sorted by percentage, making it easy to see which categories have the most candidates. Detailed information: Both percentage and count are displayed for each category, providing precise information at a glance.\nFor the “Party Wise Percentage of Candidates With Declared Criminal Cases” data, I proposed a horizontal bar chart. This redesign offers several advantages: Clear representation: The horizontal bar chart clearly shows the percentage of candidates with declared criminal cases for each party. Sorted data: Parties are sorted by percentage, making it easy to compare between parties. Labeled data: The exact percentage is displayed next to each bar for precise information. Improved readability: Horizontal bars make it easier to read party names, especially for parties with longer names. Consistent scale: The y-axis is set to a maximum of 100%, providing a consistent scale for comparison. Both of these redesigns aim to present the data in a more intuitive, visually appealing, and informative manner. They make it easier for viewers to quickly grasp the key information and make comparisons between different categories or parties. This is particularly important for electoral data, where clear and accessible information can help voters make more informed decisions.\nThe source of doing this project is : “Analysis of Criminal Background, Financial, Education, Gender and other details of Candidates contesting in Andhra Pradesh Assembly Election 2024,” National Election Watch, Google Groups. [Online]. Available: https://groups.google.com/g/national-election-watch/c/IJIZk3eP03w [Accessed: Oct. 9, 2024].\nThe video Code is embedded in Youtube here is the link:"
+  },
+  {
+    "objectID": "code.html",
+    "href": "code.html",
+    "title": "CODE",
+    "section": "",
+    "text": "library(lattice) library(tidyverse) library(plotly) library(ggplot2) library(tidyr) library(magrittr) library(dplyr) library(tibble)"
+  },
+  {
+    "objectID": "code.html#section",
+    "href": "code.html#section",
+    "title": "CODE",
+    "section": "2",
+    "text": "2"
+  },
+  {
+    "objectID": "visualizations.html",
+    "href": "visualizations.html",
+    "title": "Visualization",
+    "section": "",
+    "text": "# Redesign 1.1 using Treemao plotly\n\n\n\n\n\n# redesign 1.2Created stacked bar chart using cumulaitive percentage\n\n\n\n\n\nRedesign 2.1\n\n\n\n\n\n# Redesign 2.2"
+  }
+]

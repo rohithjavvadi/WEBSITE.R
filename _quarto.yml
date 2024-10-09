@@ -1,0 +1,36 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "RohithJavvadi"
+  sidebar:
+    tools:
+      - icon: twitter
+        href: https://twitter.com
+      - icon: github
+        menu:
+          - text: Source Code
+            href: https://github.com/rohithjavvadi/WEBSITE.R
+          - text: Report a Bug
+            href:  https://bugs.com
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - about.qmd
+      - skills.qmd
+      - projects.qmd
+      - hobbies.qmd
+      - Mid project.qmd
+      - code.qmd
+      - visualizations.qmd
+
+format:
+  html:
+    theme: lux
+    css: styles.css
+    toc: true
+
+
+

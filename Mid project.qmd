@@ -1,0 +1,31 @@
+---
+title:  Mid-Project 
+editor: visual
+---
+The Midterm Redesign Project for the course STAT 515: Applied Statistics and Visualization for Analytics is designed to enhance students' skills in data visualization through a systematic redesign process. The project aims to apply class design guidelines using software taught in the course while presenting the results of these redesigns. Students are required to select an original visualization from any source, analyze its strengths and weaknesses, and create multiple redesigns that improve clarity and effectiveness. The project culminates in a professional website submission, which must include a URL to the project site, a GitHub repository with the project code, and a ten-minute video presentation embedded on the website. The analysis should cover the context and intent of the original visualization, highlight its flaws, and suggest improvements based on graphic design principles. This project not only fosters critical thinking and creativity but also contributes to building a professional portfolio, as students are encouraged to apply best practices in graphic design while adhering to academic writing standards.
+
+Introduction:
+I selected two graphs from the original PDF to redesign for better understanding and visualization:
+"Share of Wealth Among the Contesting Candidates"
+"Party Wise Percentage of Candidates With Declared Criminal Cases"
+I chose these two graphs because they contain important information about the candidates' financial backgrounds and criminal records, which are crucial factors for voters to consider. The original presentations of this data were not as visually appealing or easy to understand as they could be.
+For the "Share of Wealth Among the Contesting Candidates" data, I proposed a stacked bar chart and tree map. Here's why this redesign is more effective:
+Comprehensive view: It shows both the percentage and the actual number of candidates in each wealth category simultaneously.
+Clear proportions: The stacked bar format allows for easy comparison of proportions between categories.
+Color-coded categories: Each wealth category is represented by a distinct color, making it easy to differentiate between them.
+Sorted data: Categories are sorted by percentage, making it easy to see which categories have the most candidates.
+Detailed information: Both percentage and count are displayed for each category, providing precise information at a glance.
+
+For the "Party Wise Percentage of Candidates With Declared Criminal Cases" data, I proposed a horizontal bar chart. This redesign offers several advantages:
+Clear representation: The horizontal bar chart clearly shows the percentage of candidates with declared criminal cases for each party.
+Sorted data: Parties are sorted by percentage, making it easy to compare between parties.
+Labeled data: The exact percentage is displayed next to each bar for precise information.
+Improved readability: Horizontal bars make it easier to read party names, especially for parties with longer names.
+Consistent scale: The y-axis is set to a maximum of 100%, providing a consistent scale for comparison.
+Both of these redesigns aim to present the data in a more intuitive, visually appealing, and informative manner. They make it easier for viewers to quickly grasp the key information and make comparisons between different categories or parties. This is particularly important for electoral data, where clear and accessible information can help voters make more informed decisions.
+
+The source of doing this project is : "Analysis of Criminal Background, Financial, Education, Gender and other details of Candidates contesting in Andhra Pradesh Assembly Election 2024," National Election Watch, Google Groups. [Online]. Available: https://groups.google.com/g/national-election-watch/c/IJIZk3eP03w [Accessed: Oct. 9, 2024].
+
+
+
+The video Code is embedded in Youtube here is the link:
