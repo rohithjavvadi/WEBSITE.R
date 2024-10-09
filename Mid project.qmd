@@ -2,30 +2,49 @@
 title:  Mid-Project 
 editor: visual
 ---
-The Midterm Redesign Project for the course STAT 515: Applied Statistics and Visualization for Analytics is designed to enhance students' skills in data visualization through a systematic redesign process. The project aims to apply class design guidelines using software taught in the course while presenting the results of these redesigns. Students are required to select an original visualization from any source, analyze its strengths and weaknesses, and create multiple redesigns that improve clarity and effectiveness. The project culminates in a professional website submission, which must include a URL to the project site, a GitHub repository with the project code, and a ten-minute video presentation embedded on the website. The analysis should cover the context and intent of the original visualization, highlight its flaws, and suggest improvements based on graphic design principles. This project not only fosters critical thinking and creativity but also contributes to building a professional portfolio, as students are encouraged to apply best practices in graphic design while adhering to academic writing standards.
+The Midterm Redesign Project for the course STAT 515: Applied Statistics and Visualization for Analytics is a comprehensive initiative aimed at significantly enhancing students' data visualization skills through a rigorous redesign process. The project mandates students to meticulously apply class design guidelines using the software covered in the course, culminating in the presentation of their redesigned visualizations. Students are required to meticulously select an original visualization, conduct a thorough analysis of its strengths and weaknesses, and develop multiple redesigns that markedly improve clarity and effectiveness. The final deliverable will be a professional website submission, complete with a link to the project site, a GitHub repository housing the project code, and a compelling ten-minute video presentation embedded on the website. The analysis should offer a detailed examination of the original visualization's context and intent, meticulously pointing out its flaws and offering practical improvements based on graphic design principles. This project actively fosters critical thinking and creativity and plays a pivotal role in building a robust professional portfolio, urging students to apply impeccable graphic design practices while upholding the highest academic writing standards.
 
 Introduction:
-I selected two graphs from the original PDF to redesign for better understanding and visualization:
-"Share of Wealth Among the Contesting Candidates"
-"Party Wise Percentage of Candidates With Declared Criminal Cases"
-I chose these two graphs because they contain important information about the candidates' financial backgrounds and criminal records, which are crucial factors for voters to consider. The original presentations of this data were not as visually appealing or easy to understand as they could be.
-For the "Share of Wealth Among the Contesting Candidates" data, I proposed a stacked bar chart and tree map. Here's why this redesign is more effective:
-Comprehensive view: It shows both the percentage and the actual number of candidates in each wealth category simultaneously.
-Clear proportions: The stacked bar format allows for easy comparison of proportions between categories.
-Color-coded categories: Each wealth category is represented by a distinct color, making it easy to differentiate between them.
-Sorted data: Categories are sorted by percentage, making it easy to see which categories have the most candidates.
-Detailed information: Both percentage and count are displayed for each category, providing precise information at a glance.
+In the field of political analysis, the visual representation of data plays a critical role in shaping public understanding and informing decision-making. During elections, voters often consider various factors when evaluating candidates, such as their financial backgrounds and criminal histories. These factors provide important insights into the candidates' ethical standing and overall suitability for office. In an attempt to improve the clarity and accessibility of such complex electoral data, two graphs were selected for the redesign: "Share of Wealth Among the Contesting Candidates" and "Party Wise Percentage of Candidates With Declared Criminal Cases." This essay will examine the significance of these graphs, the limitations of their original formats, and the rationale behind the proposed redesigns, which aim to enhance their visual effectiveness and ensure a deeper comprehension of the information they convey.
+Significance of the Selected Graphs
+The "Share of Wealth Among the Contesting Candidates" graph captures data about the financial standing of candidates running for office. Wealth has historically been an important factor in political campaigns as it can influence candidates’ capacity to fund their campaigns, appeal to specific voter bases, or signal their connection (or lack thereof) to different economic strata. Voters often view the wealth of candidates as an indication of their values or political priorities. Therefore, visualization of wealth distribution among candidates is a critical tool for providing voters with an understanding of who is competing in the election. Similarly, the "Party Wise Percentage of Candidates With Declared Criminal Cases" graph presents vital information regarding candidates' legal histories. Criminal records are a major factor in shaping public trust, and they play a significant role in political accountability and integrity. By disclosing which candidates have declared criminal cases and by presenting this data in a party-wise comparison, voters are empowered to make informed decisions about the ethical standards of political parties and their candidates. Both graphs are not only data-driven but also narratively important. They directly address key issues that concern the electorate and offer voters transparency in two of the most critical domains—financial background and criminal history.
 
-For the "Party Wise Percentage of Candidates With Declared Criminal Cases" data, I proposed a horizontal bar chart. This redesign offers several advantages:
-Clear representation: The horizontal bar chart clearly shows the percentage of candidates with declared criminal cases for each party.
-Sorted data: Parties are sorted by percentage, making it easy to compare between parties.
-Labeled data: The exact percentage is displayed next to each bar for precise information.
-Improved readability: Horizontal bars make it easier to read party names, especially for parties with longer names.
-Consistent scale: The y-axis is set to a maximum of 100%, providing a consistent scale for comparison.
-Both of these redesigns aim to present the data in a more intuitive, visually appealing, and informative manner. They make it easier for viewers to quickly grasp the key information and make comparisons between different categories or parties. This is particularly important for electoral data, where clear and accessible information can help voters make more informed decisions.
+Limitations of the Original Formats
+While these two graphs contain invaluable data, their original presentation likely undercut their potential to communicate this information effectively. The "Share of Wealth Among the Contesting Candidates" graph was likely presented in a pie chart or a simple bar graph. Although pie charts are often used for proportion-based data, they can become ineffective when representing more complex information involving both percentages and absolute numbers. For instance, pie charts struggle to depict wealth distribution across multiple categories in a nuanced way because they do not allow for easy comparison of absolute values, and subtle differences between categories may be visually understated. A simple bar graph, while somewhat more effective, cannot still demonstrate the hierarchical nature and complexity of the data.
 
-The source of doing this project is : "Analysis of Criminal Background, Financial, Education, Gender and other details of Candidates contesting in Andhra Pradesh Assembly Election 2024," National Election Watch, Google Groups. [Online]. Available: https://groups.google.com/g/national-election-watch/c/IJIZk3eP03w [Accessed: Oct. 9, 2024].
+Similarly, the "Party Wise Percentage of Candidates With Declared Criminal Cases" was likely displayed as a simple bar chart or table. While bar charts are useful for comparison, they can become visually monotonous when trying to highlight differences across multiple parties, especially if the dataset is extensive. Tables are also often difficult to interpret at a glance and do not allow for quick comparisons between parties, a key necessity when trying to discern overall trends.
 
+Proposed Redesign and Its Advantages
+Redesign of the "Share of Wealth Among the Contesting Candidates"
+To address the limitations of the original graph and improve the visualization, a treemap, and a stacked bar chart were proposed for the "Share of Wealth Among the Contesting Candidates" data. These redesigns provide several benefits:
+
+Comprehensive View: Both the treemap and stacked bar chart allow viewers to simultaneously see both the percentages and absolute numbers of candidates within different wealth categories. This duality provides a more holistic picture of wealth distribution, offering voters both a high-level overview and detailed insight into the economic diversity of the candidates.
+
+Clear Proportions: The stacked bar format is particularly effective in visualizing proportions, as it allows for easy comparison between categories. The treemap, in turn, uses space efficiently to convey the relative sizes of different categories, making it easier to grasp subtle differences that a pie chart might obscure.
+
+Color-Coding: By assigning distinct colors to each wealth category, the new design enhances the legibility of the graph. It also improves accessibility for viewers by providing a visual cue for differentiation, ensuring that the data remains understandable at a glance.
+
+Sorted Data: Sorting the data by percentage in descending order allows the viewer to immediately identify the wealthiest categories. This organization is critical for quick comparison and interpretation of the data.
+
+Detailed Information: The new design ensures that both the percentage and count are displayed for each category. This attention to detail makes the data more informative without overwhelming the viewer with excessive figures.
+
+Redesign of the "Party Wise Percentage of Candidates With Declared Criminal Cases"
+For the "Party Wise Percentage of Candidates With Declared Criminal Cases" data, a horizontal bar chart was proposed. This format offers several key advantages:
+
+Clear Representation: Horizontal bars are easier to read than vertical bars, especially when dealing with long party names or multiple categories. This format provides a clearer, more legible representation of the data, reducing the risk of misinterpretation.
+
+Sorted Data: By sorting the parties in descending order based on the percentage of candidates with declared criminal cases, viewers can easily compare between parties. The sorting also highlights which parties have the most concerning numbers, making the trend across parties immediately apparent.
+
+Labeled Data: Displaying the exact percentage next to each bar ensures that viewers can understand precise figures without needing to estimate values based on the length of the bars.
+
+Improved Readability: The horizontal bar chart is particularly effective in displaying party names. This is important for maintaining clarity, as political parties often have long and similar names that can confuse vertically oriented bar charts.
+
+Consistent Scale: Setting the y-axis to a maximum of 100% provides a consistent scale across all parties, allowing viewers to make straightforward comparisons without needing to account for differences in scaling.
 
 
 The video Code is embedded in Youtube here is the link:
+
+The source of this project is: "Analysis of Criminal Background, Financial, Education, Gender and Other Details of Candidates Contesting in Andhra Pradesh Assembly Election 2024," National Election Watch, Google Groups. [Online]. Available: https://groups.google.com/g/national-election-watch/c/IJIZk3eP03w [Accessed: Oct. 9, 2024].
+
+
+
