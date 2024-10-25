@@ -116,10 +116,6 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="./code.html"> 
 <span class="menu-text">CODE</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./visualizations.html"> 
-<span class="menu-text">Visualization</span></a>
-  </li>  
 </ul>
           </div> <!-- /navcollapse -->
           <div class="quarto-navbar-tools">
@@ -163,7 +159,17 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#original-visualizations" id="toc-original-visualizations" class="nav-link active" data-scroll-target="#original-visualizations">ORIGINAL VISUALIZATIONS</a></li>
+  <li><a href="#analysis-of-the-original-visualizations" id="toc-analysis-of-the-original-visualizations" class="nav-link" data-scroll-target="#analysis-of-the-original-visualizations">ANALYSIS OF THE ORIGINAL VISUALIZATIONS</a></li>
+  <li><a href="#redesigned-visualizations" id="toc-redesigned-visualizations" class="nav-link" data-scroll-target="#redesigned-visualizations">REDESIGNED VISUALIZATIONS</a></li>
+  <li><a href="#improvements" id="toc-improvements" class="nav-link" data-scroll-target="#improvements">-Improvements:</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">CONCLUSION</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -187,28 +193,91 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>The Midterm Redesign Project for the course STAT 515: Applied Statistics and Visualization for Analytics is designed to enhance students’ skills in data visualization through a systematic redesign process. The project aims to apply class design guidelines using software taught in the course while presenting the results of these redesigns. Students are required to select an original visualization from any source, analyze its strengths and weaknesses, and create multiple redesigns that improve clarity and effectiveness. The project culminates in a professional website submission, which must include a URL to the project site, a GitHub repository with the project code, and a ten-minute video presentation embedded on the website. The analysis should cover the context and intent of the original visualization, highlight its flaws, and suggest improvements based on graphic design principles. This project not only fosters critical thinking and creativity but also contributes to building a professional portfolio, as students are encouraged to apply best practices in graphic design while adhering to academic writing standards.</p>
-<p>Introduction: In the field of political analysis, the visual representation of data plays a critical role in shaping public understanding and informing decision-making. During elections, voters often consider various factors when evaluating candidates, such as their financial backgrounds and criminal histories. These factors provide important insights into the candidates’ ethical standing and overall suitability for office. In an attempt to improve the clarity and accessibility of such complex electoral data, two graphs were selected for the redesign: “Share of Wealth Among the Contesting Candidates” and “Party Wise Percentage of Candidates With Declared Criminal Cases.” This essay will examine the significance of these graphs, the limitations of their original formats, and the rationale behind the proposed redesigns, which aim to enhance their visual effectiveness and ensure a deeper comprehension of the information they convey.</p>
-<p>Significance of the Selected Graphs:</p>
-<p>The “Share of Wealth Among the Contesting Candidates” graph captures data about the financial standing of candidates running for office. Wealth has historically been an important factor in political campaigns as it can influence candidates’ capacity to fund their campaigns, appeal to specific voter bases, or signal their connection (or lack thereof) to different economic strata. Voters often view the wealth of candidates as an indication of their values or political priorities. Therefore, visualization of wealth distribution among candidates is a critical tool for providing voters with an understanding of who is competing in the election. Similarly, the “Party Wise Percentage of Candidates With Declared Criminal Cases” graph presents vital information regarding candidates’ legal histories. Criminal records are a major factor in shaping public trust, and they play a significant role in political accountability and integrity. By disclosing which candidates have declared criminal cases and by presenting this data in a party-wise comparison, voters are empowered to make informed decisions about the ethical standards of political parties and their candidates. Both graphs are not only data-driven but also narratively important. They directly address key issues that concern the electorate and offer voters transparency in two of the most critical domains—financial background and criminal history.</p>
-<p>Limitations of the Original Formats While these two graphs contain invaluable data, their original presentation likely undercut their potential to communicate this information effectively. The “Share of Wealth Among the Contesting Candidates” graph was likely presented in a pie chart or a simple bar graph. Although pie charts are often used for proportion-based data, they can become ineffective when representing more complex information involving both percentages and absolute numbers. For instance, pie charts struggle to depict wealth distribution across multiple categories in a nuanced way because they do not allow for easy comparison of absolute values, and subtle differences between categories may be visually understated. A simple bar graph, while somewhat more effective, cannot still demonstrate the hierarchical nature and complexity of the data.</p>
-<p>Similarly, the “Party Wise Percentage of Candidates With Declared Criminal Cases” was likely displayed as a simple bar chart or table. While bar charts are useful for comparison, they can become visually monotonous when trying to highlight differences across multiple parties, especially if the dataset is extensive. Tables are also often difficult to interpret at a glance and do not allow for quick comparisons between parties, a key necessity when trying to discern overall trends.</p>
-<p>Proposed Redesign and Its Advantages Redesign of the “Share of Wealth Among the Contesting Candidates” To address the limitations of the original graph and improve the visualization, a treemap, and a stacked bar chart were proposed for the “Share of Wealth Among the Contesting Candidates” data. These redesigns provide several benefits:</p>
-<p>Comprehensive View: Both the treemap and stacked bar chart allow viewers to simultaneously see both the percentages and absolute numbers of candidates within different wealth categories. This duality provides a more holistic picture of wealth distribution, offering voters both a high-level overview and detailed insight into the economic diversity of the candidates.</p>
-<p>Clear Proportions: The stacked bar format is particularly effective in visualizing proportions, as it allows for easy comparison between categories. The treemap, in turn, uses space efficiently to convey the relative sizes of different categories, making it easier to grasp subtle differences that a pie chart might obscure.</p>
-<p>Color-Coding: By assigning distinct colors to each wealth category, the new design enhances the legibility of the graph. It also improves accessibility for viewers by providing a visual cue for differentiation, ensuring that the data remains understandable at a glance.</p>
-<p>Sorted Data: Sorting the data by percentage in descending order allows the viewer to immediately identify the wealthiest categories. This organization is critical for quick comparison and interpretation of the data.</p>
-<p>Detailed Information: The new design ensures that both the percentage and count are displayed for each category. This attention to detail makes the data more informative without overwhelming the viewer with excessive figures.</p>
-<p>Redesign of the “Party Wise Percentage of Candidates With Declared Criminal Cases” For the “Party Wise Percentage of Candidates With Declared Criminal Cases” data, a horizontal bar chart was proposed. This format offers several key advantages:</p>
-<p>Clear Representation: Horizontal bars are easier to read than vertical bars, especially when dealing with long party names or multiple categories. This format provides a clearer, more legible representation of the data, reducing the risk of misinterpretation.</p>
-<p>Sorted Data: By sorting the parties in descending order based on the percentage of candidates with declared criminal cases, viewers can easily compare between parties. The sorting also highlights which parties have the most concerning numbers, making the trend across parties immediately apparent.</p>
-<p>Labeled Data: Displaying the exact percentage next to each bar ensures that viewers can understand precise figures without needing to estimate values based on the length of the bars.</p>
-<p>Improved Readability: The horizontal bar chart is particularly effective in displaying party names. This is important for maintaining clarity, as political parties often have long and similar names that can confuse vertically oriented bar charts.</p>
-<p>Consistent Scale: Setting the y-axis to a maximum of 100% provides a consistent scale across all parties, allowing viewers to make straightforward comparisons without needing to account for differences in scaling.</p>
-<p>The video Code is embedded in Youtube here is the link:</p>
-<p>The source of doing this project is : “Analysis of Criminal Background, Financial, Education, Gender and other details of Candidates contesting in Andhra Pradesh Assembly Election 2024,” National Election Watch, Google Groups. [Online]. Available: https://groups.google.com/g/national-election-watch/c/IJIZk3eP03w [Accessed: Oct.&nbsp;9, 2024].</p>
+<p>Welcome to our STAT 515 Redesign Project! This project aims to analyze and improve the design of data visualizations, applying best practices in graphic design and data presentation. The focus is on improving clarity, enhancing insight, and addressing any shortcomings of the original visualizations.</p>
+<p>In this project, we have selected two original visualizations that depict data about political candidates, including their wealth distribution and criminal cases. Through multiple redesigns, I aim to provide a clearer and more informative perspective on the underlying data.</p>
+<section id="original-visualizations" class="level1">
+<h1>ORIGINAL VISUALIZATIONS</h1>
+<p>The original visualizations present data about political candidates in terms of:</p>
+<p><em>Criminal Cases Among Candidates</em>: The percentage of candidates from different political party categories who have declared criminal and serious criminal cases.</p>
+<p><img src="images/original1.png" class="img-fluid"></p>
+<p>Available at https://groups.google.com/g/national-election-watch/c/IJIZk3eP03w</p>
+<p><em>Financial Background</em>: The wealth distribution among the contesting candidates, categorized into different wealth brackets (e.g., less than Rs. 10 lakhs, Rs. 10 lakhs to Rs. 50 lakhs, and above Rs. 5 crores).</p>
+<p><img src="images/original 2.png" class="img-fluid"></p>
+<p>Available at https://groups.google.com/g/national-election-watch/c/IJIZk3eP03w</p>
+</section>
+<section id="analysis-of-the-original-visualizations" class="level1">
+<h1>ANALYSIS OF THE ORIGINAL VISUALIZATIONS</h1>
+<ul>
+<li><em>Criminal Cases Visualization</em>:</li>
+</ul>
+<p>*The bar charts show that State Parties have the highest proportion of candidates with declared criminal and serious criminal cases (56% and 36%, respectively). National Parties and Independent candidates have lower proportions, but the difference in representation is not immediately clear.</p>
+<p>*Flaws: The side-by-side bar charts use similar colors, making it difficult to differentiate between candidates with criminal and serious criminal cases. The charts also lack annotations that could make the differences between categories more obvious.</p>
+<p>-Financial Background Visualization:</p>
+<p>*The pie chart displays the proportion of candidates in different wealth categories, with most candidates falling below Rs. 10 lakhs (40.8%). A smaller portion of candidates possess wealth above Rs. 5 crores.</p>
+<p>*Flaws: The pie chart is not ideal for accurately comparing different categories, especially when the proportions are close. Pie charts are less effective at revealing fine differences in data, making it harder to understand the distribution at a glance.</p>
+</section>
+<section id="redesigned-visualizations" class="level1">
+<h1>REDESIGNED VISUALIZATIONS</h1>
+<p>To address the shortcomings of the original visualizations, I have created several redesigned versions that emphasize clarity and comparative insights.</p>
+<p>-Redesign 1 For Criminal Cases Visualization:</p>
+<p><img src="images/Redesign_2.png" class="img-fluid"></p>
+<p>This is a stacked horizontal bar chart comparing the share of candidates with criminal cases (gray) and crorepati candidates (black) across different political party categories. It includes State Parties, Registered Unrecognized Parties, National Parties, and Independent candidates.</p>
+<p>-Key Points:</p>
+<p>*National Parties have 77% crorepati candidates, showing a strong presence of wealth. State Parties have 69% crorepati candidates and 31% with criminal cases.</p>
+<p>*Independent candidates are nearly balanced, with 52% having criminal cases and 48% being crorepati. Registered Unrecognized Parties have 52% with criminal cases versus 48% who are crorepati.</p>
+<p>-Improvements:</p>
+<p>*Direct Comparison: Stacking the data allows for a side-by-side look at criminal cases vs.&nbsp;wealth within each party.</p>
+<p>*Clear Labels: Percentages on each segment make it easy to see the share of each group.</p>
+<p>*Simpler Analysis: By combining two metrics in one chart, it’s easier to grasp the overall picture quickly.</p>
+<p>This design makes it simple to compare the balance of wealth and criminal backgrounds among candidates from various parties.</p>
+<p><em>-Redesign 2 For Criminal Cases Visualization:</em></p>
+<p>This chart uses a grouped bar chart to display the percentage of candidates with criminal cases (red) and crorepati candidates (blue) across different political parties, including State Parties, National Parties, Registered Unrecognized Parties, and Independents.</p>
+<p><img src="images/Redesign1.png" class="img-fluid"></p>
+<p>-Key Points:</p>
+<p>*State Parties have the highest share of crorepati candidates (79%) and a significant portion with criminal cases (56%).</p>
+<p>*National Parties follow with 30% crorepati candidates and 17% with criminal cases.</p>
+<p>*Independents and Registered Unrecognized Parties have smaller shares, both showing 16% of candidates with criminal cases.</p>
+<p>-Improvements:</p>
+<p>*Side-by-Side Comparison: Grouped bars make it easy to compare criminal cases and wealth status within each party.</p>
+<p>*Color Distinction: Clear color contrast helps differentiate the two data categories. Visual Balance: This layout provides a balanced view of the data, making it easier to assess both aspects at a glance.</p>
+<p>*This design provides a quick comparison between the financial background and legal status of candidates in each party, offering a straightforward way to interpret the data.</p>
+<p>-<em>Redesign 1 For Financial Background Visualization:</em></p>
+<p><img src="images/redesign2.png" class="img-fluid"></p>
+<p>This horizontal bar chart illustrates the wealth distribution among contesting candidates, categorized into various wealth brackets, from less than Rs. 10 lakhs to above Rs. 5 crores.</p>
+<p>-Key Points:</p>
+<p>*The majority of candidates (40.8%, 965 candidates) have wealth above Rs. 5 crores, indicating a significant portion of wealthy candidates.</p>
+<p>*24.7% of candidates fall within the Rs. 2 crores to Rs. 5 crores range.</p>
+<p>*The Rs. 50 lakhs to Rs. 2 crores category comprises 15% of candidates.</p>
+<p>*The least represented category is less than Rs. 10 lakhs, accounting for 5.8% or 138 candidates.</p>
+<p>-Improvements:</p>
+<p>*Enhanced Clarity: The horizontal bar layout allows for easier reading and comparison of each wealth category.</p>
+<p>*Direct Annotations: Percentages and candidate counts are displayed directly on the bars, eliminating the need to refer back to the axis.</p>
+<p>*Better Visual Hierarchy: Larger wealth categories are visually more prominent, making it easier to understand the overall distribution.</p>
+<p>This redesign provides a clear and intuitive way to see the distribution of wealth among candidates, highlighting which groups are more prevalent.</p>
+<p>-<em>Redesign 2 For Financial Background Visualization:</em></p>
+<p>This visualization uses a stacked bar chart to show the percentage and number of candidates in different wealth categories. Each segment represents a wealth bracket, ranging from less than Rs. 10 lakhs to above Rs. 5 crores.</p>
+<p><img src="images/redesign3.png" class="img-fluid"></p>
+<p>-Key Points:</p>
+<p>*The largest portion of candidates (40.8%, 965 candidates) belongs to the above Rs. 5 crores category.</p>
+<p>*24.7% of candidates fall within the Rs. 2 crores to Rs. 5 crores range, with 586 candidates.</p>
+<p>*The Rs. 50 lakhs to Rs. 2 crores category includes 15% (356 candidates).</p>
+<p>*The smallest group is those with less than Rs. 10 lakhs (5.8%, 138 candidates).</p>
+</section>
+<section id="improvements" class="level1">
+<h1>-Improvements:</h1>
+<p>*Visual Simplicity: The stacked bar chart format allows viewers to easily see the proportion of each wealth category.</p>
+<p>*Color Coding: Each category is assigned a distinct color, improving readability and making it easy to differentiate wealth groups.</p>
+<p>*Detailed Annotations: Each section is labeled with both the percentage and the exact number of candidates, providing precise information without needing additional references.</p>
+<p>This redesign offers a clear, concise way to view the wealth distribution among candidates, making it easier to understand the overall spread of financial backgrounds.</p>
+</section>
+<section id="conclusion" class="level1">
+<h1>CONCLUSION</h1>
+<p>The redesigns highlight the power of choosing the right visual representation for data. Through the process, I learned that simplifying visuals and selecting chart types that align with the data structure can significantly enhance the viewer’s understanding. Each redesign has its strengths and offers a unique way to interpret the data, whether through a clear bar chart, a detailed treemap, or enhanced annotations.</p>
+<p>Further improvements could involve interactive charts that allow users to explore the data by selecting party categories or wealth brackets. Such interactivity would provide a deeper dive into the data and offer a more engaging experience for viewers.</p>
+<p>Feel free to explore the visualizations and analysis provided in each section of this website, and I hope you find the redesigns insightful! </p><div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/gMM6LK2kbeM" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div><p></p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
