@@ -40,6 +40,17 @@ AICTE | CLoud data intern | May 2023 - July2023
 ## Skills
 R programming, SQL, Python, Python frameworks
 
+## Projects
+Re-Designing Graphs
+ * This project aims to analyze and improve the design of data visualizations, applying best practices in graphic design and data presentation. The focus is on improving clarity, enhancing insight, and addressing any shortcomings of the original visualizations.
+
+HR analytics 
+ * Analyzing the HR data with Rand showcasing with the dashboards with the help of powerBI.
+
+Covid19 analysis
+ * Analyzed covid‑19 dataset, cleaned it and processed it through R Programming language.
+
+
 
 :::
 
